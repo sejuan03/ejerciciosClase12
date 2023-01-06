@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DeB-dJ-fbq">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Planets View Controller-->
+        <scene sceneID="x0J-BQ-5xR">
+            <objects>
+                <viewController id="DeB-dJ-fbq" customClass="PlanetsViewController" customModule="Clase12Ejercicio2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wRO-FB-fcn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kGB-9H-RY6">
+                                <rect key="frame" x="0.0" y="92" width="390" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlanetCell" rowHeight="141" id="xMt-7n-Ozy" customClass="PlanetCell" customModule="Clase12Ejercicio2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="141"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xMt-7n-Ozy" id="KY8-cV-zEg">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="141"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ho5-JU-cap">
+                                                    <rect key="frame" x="20" y="5" width="175.66666666666666" height="131"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="175.66999999999999" id="HfY-Xu-zyz"/>
+                                                        <constraint firstAttribute="height" constant="131" id="doe-qH-QV9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercurio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioO-Li-61p">
+                                                    <rect key="frame" x="215.66666666666663" y="36" width="134.33333333333337" height="32.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Satelites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gX-4A-0uc">
+                                                    <rect key="frame" x="215.66666666666663" y="84" width="134.33333333333337" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5gX-4A-0uc" secondAttribute="trailing" constant="20" id="Bdt-Xa-3WP"/>
+                                                <constraint firstItem="ioO-Li-61p" firstAttribute="top" secondItem="KY8-cV-zEg" secondAttribute="topMargin" constant="25" id="E9q-3u-u89"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ioO-Li-61p" secondAttribute="trailing" constant="20" id="Lgv-i8-2uz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="5gX-4A-0uc" secondAttribute="bottom" constant="25" id="WIq-Ey-dJ5"/>
+                                                <constraint firstItem="Ho5-JU-cap" firstAttribute="top" secondItem="KY8-cV-zEg" secondAttribute="top" constant="5" id="Yt2-VS-lD5"/>
+                                                <constraint firstItem="ioO-Li-61p" firstAttribute="leading" secondItem="Ho5-JU-cap" secondAttribute="trailing" constant="20" id="eLq-1w-eKq"/>
+                                                <constraint firstItem="5gX-4A-0uc" firstAttribute="leading" secondItem="Ho5-JU-cap" secondAttribute="trailing" constant="20" id="jQ4-1E-wTL"/>
+                                                <constraint firstItem="Ho5-JU-cap" firstAttribute="width" secondItem="KY8-cV-zEg" secondAttribute="width" multiplier="0.45" id="t1w-1s-9Kl"/>
+                                                <constraint firstItem="Ho5-JU-cap" firstAttribute="leading" secondItem="KY8-cV-zEg" secondAttribute="leading" constant="20" id="vVR-Fk-PYS"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ho5-JU-cap" secondAttribute="bottom" constant="5" id="z9w-4R-8Y2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="planetImageView" destination="Ho5-JU-cap" id="0SV-nL-8an"/>
+                                            <outlet property="planetNameLabel" destination="ioO-Li-61p" id="KIH-Q3-aJM"/>
+                                            <outlet property="satelitesLabel" destination="5gX-4A-0uc" id="nYX-uz-tMY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planetas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wy-Ny-fwQ">
+                                <rect key="frame" x="144" y="57" width="102" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bTo-aN-wyE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bTo-aN-wyE" firstAttribute="bottom" secondItem="kGB-9H-RY6" secondAttribute="bottom" id="JWw-CZ-g4S"/>
+                            <constraint firstItem="kGB-9H-RY6" firstAttribute="top" secondItem="7wy-Ny-fwQ" secondAttribute="bottom" constant="5" id="Oj4-Bl-kxR"/>
+                            <constraint firstItem="bTo-aN-wyE" firstAttribute="trailing" secondItem="kGB-9H-RY6" secondAttribute="trailing" id="RoL-J4-bcR"/>
+                            <constraint firstItem="7wy-Ny-fwQ" firstAttribute="centerX" secondItem="wRO-FB-fcn" secondAttribute="centerX" id="XFK-jk-kIH"/>
+                            <constraint firstItem="kGB-9H-RY6" firstAttribute="leading" secondItem="bTo-aN-wyE" secondAttribute="leading" id="Xg7-cw-jjs"/>
+                            <constraint firstItem="7wy-Ny-fwQ" firstAttribute="top" secondItem="bTo-aN-wyE" secondAttribute="top" constant="10" id="zkJ-5f-M1a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kGB-9H-RY6" id="iRi-tN-oAM"/>
+                        <segue destination="M9U-fd-meU" kind="presentation" identifier="goToPlanetDetail" modalPresentationStyle="fullScreen" id="Z5o-0N-ueb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KI1-Dd-Ikf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-114"/>
+        </scene>
+        <!--Planet Detail View Controller-->
+        <scene sceneID="PF5-i8-CD0">
+            <objects>
+                <viewController id="M9U-fd-meU" customClass="PlanetDetailViewController" customModule="Clase12Ejercicio2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vjw-zb-zj9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mercurio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRH-vk-DDY">
+                                <rect key="frame" x="143" y="62" width="104.33333333333331" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0S-jA-PsZ">
+                                <rect key="frame" x="147.33333333333334" y="310.66666666666669" width="95.666666666666657" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PZl-i2-0GS">
+                                <rect key="frame" x="58.666666666666657" y="111.99999999999999" width="273" height="168.66666666666663"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sistemasolar" translatesAutoresizingMaskIntoConstraints="NO" id="F8M-ml-ysr">
+                                <rect key="frame" x="58.666666666666657" y="471.33333333333326" width="273" height="169"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Satelites: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceW-n4-nv4">
+                                <rect key="frame" x="20" y="352.33333333333331" width="350" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Periodo Orbital: 212" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLD-A9-ddP">
+                                <rect key="frame" x="20" y="392.66666666666669" width="350" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distanicia al Sol: 1012 Km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-iS-xK8">
+                                <rect key="frame" x="20" y="432" width="350" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGe-oe-4LJ">
+                                <rect key="frame" x="5" y="52" width="104" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt; Planetas"/>
+                                <connections>
+                                    <action selector="onBackButtonPressed:" destination="M9U-fd-meU" eventType="touchUpInside" id="zSU-bq-7W1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9tQ-dU-SCm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F8M-ml-ysr" firstAttribute="height" secondItem="vjw-zb-zj9" secondAttribute="height" multiplier="0.2" id="3bD-uD-QfN"/>
+                            <constraint firstItem="9tQ-dU-SCm" firstAttribute="trailing" secondItem="EaP-iS-xK8" secondAttribute="trailing" constant="20" id="50f-zD-RfD"/>
+                            <constraint firstItem="F8M-ml-ysr" firstAttribute="top" secondItem="EaP-iS-xK8" secondAttribute="bottom" constant="20" id="53t-d3-paU"/>
+                            <constraint firstItem="F8M-ml-ysr" firstAttribute="centerX" secondItem="vjw-zb-zj9" secondAttribute="centerX" id="6Nu-Tv-YDg"/>
+                            <constraint firstItem="9tQ-dU-SCm" firstAttribute="trailing" secondItem="iLD-A9-ddP" secondAttribute="trailing" constant="20" id="8ld-ua-YnK"/>
+                            <constraint firstItem="9tQ-dU-SCm" firstAttribute="trailing" secondItem="ceW-n4-nv4" secondAttribute="trailing" constant="20" id="9Ym-Pu-3Eu"/>
+                            <constraint firstItem="9tQ-dU-SCm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="H0S-jA-PsZ" secondAttribute="trailing" constant="20" id="CkE-SG-9T2"/>
+                            <constraint firstItem="ZRH-vk-DDY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9tQ-dU-SCm" secondAttribute="leading" constant="30" id="DND-7J-smv"/>
+                            <constraint firstItem="iLD-A9-ddP" firstAttribute="leading" secondItem="9tQ-dU-SCm" secondAttribute="leading" constant="20" id="Et2-KD-aXT"/>
+                            <constraint firstItem="ZRH-vk-DDY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kGe-oe-4LJ" secondAttribute="trailing" constant="5" id="FmV-PT-lLf"/>
+                            <constraint firstItem="EaP-iS-xK8" firstAttribute="leading" secondItem="9tQ-dU-SCm" secondAttribute="leading" constant="20" id="JqG-gg-noU"/>
+                            <constraint firstItem="F8M-ml-ysr" firstAttribute="width" secondItem="vjw-zb-zj9" secondAttribute="width" multiplier="0.7" id="OF1-LZ-t4y"/>
+                            <constraint firstItem="ceW-n4-nv4" firstAttribute="leading" secondItem="9tQ-dU-SCm" secondAttribute="leading" constant="20" id="QTU-a2-mmM"/>
+                            <constraint firstItem="9tQ-dU-SCm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZRH-vk-DDY" secondAttribute="trailing" constant="30" id="Y5o-Rz-1BN"/>
+                            <constraint firstItem="PZl-i2-0GS" firstAttribute="centerX" secondItem="vjw-zb-zj9" secondAttribute="centerX" id="Y9H-sx-93w"/>
+                            <constraint firstItem="iLD-A9-ddP" firstAttribute="top" secondItem="ceW-n4-nv4" secondAttribute="bottom" constant="20" id="cPn-vd-gV7"/>
+                            <constraint firstItem="EaP-iS-xK8" firstAttribute="top" secondItem="iLD-A9-ddP" secondAttribute="bottom" constant="20" id="cpN-wj-bzv"/>
+                            <constraint firstItem="ceW-n4-nv4" firstAttribute="top" secondItem="H0S-jA-PsZ" secondAttribute="bottom" constant="20" id="e5W-Jg-UaD"/>
+                            <constraint firstItem="kGe-oe-4LJ" firstAttribute="leading" secondItem="9tQ-dU-SCm" secondAttribute="leading" constant="5" id="fGw-6I-ty0"/>
+                            <constraint firstItem="PZl-i2-0GS" firstAttribute="height" secondItem="vjw-zb-zj9" secondAttribute="height" multiplier="0.2" id="gel-i2-PFJ"/>
+                            <constraint firstItem="H0S-jA-PsZ" firstAttribute="top" secondItem="PZl-i2-0GS" secondAttribute="bottom" constant="30" id="l8l-JW-sXi"/>
+                            <constraint firstItem="ZRH-vk-DDY" firstAttribute="top" secondItem="9tQ-dU-SCm" secondAttribute="top" constant="15" id="mZ1-5T-KLg"/>
+                            <constraint firstItem="H0S-jA-PsZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9tQ-dU-SCm" secondAttribute="leading" constant="20" id="p9T-2W-OiX"/>
+                            <constraint firstItem="PZl-i2-0GS" firstAttribute="top" secondItem="ZRH-vk-DDY" secondAttribute="bottom" constant="20" id="pCj-g8-WYv"/>
+                            <constraint firstItem="kGe-oe-4LJ" firstAttribute="top" secondItem="9tQ-dU-SCm" secondAttribute="top" constant="5" id="ul1-09-VVU"/>
+                            <constraint firstItem="H0S-jA-PsZ" firstAttribute="centerX" secondItem="vjw-zb-zj9" secondAttribute="centerX" id="wrK-hX-tYA"/>
+                            <constraint firstItem="ZRH-vk-DDY" firstAttribute="centerX" secondItem="vjw-zb-zj9" secondAttribute="centerX" id="zFg-TG-yyi"/>
+                            <constraint firstItem="PZl-i2-0GS" firstAttribute="width" secondItem="vjw-zb-zj9" secondAttribute="width" multiplier="0.7" id="zWd-A9-jYj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="planetDescriptionLabel" destination="H0S-jA-PsZ" id="Zxe-uC-z8f"/>
+                        <outlet property="planetDistanceLabel" destination="EaP-iS-xK8" id="3gs-TP-o4i"/>
+                        <outlet property="planetFirstImageView" destination="PZl-i2-0GS" id="JQC-LA-Tvb"/>
+                        <outlet property="planetPeriodLabel" destination="iLD-A9-ddP" id="few-0B-nKE"/>
+                        <outlet property="planetSatelitesLabel" destination="ceW-n4-nv4" id="uNP-Ta-hbS"/>
+                        <outlet property="planetSecondImageView" destination="F8M-ml-ysr" id="MEP-db-mQO"/>
+                        <outlet property="planetTitleLabel" destination="ZRH-vk-DDY" id="p0J-AX-Sfe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qi3-Pn-6rE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="-114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sistemasolar" width="305" height="165"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
